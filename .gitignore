@@ -1,0 +1,27 @@
+# Node
+node_modules/
+frontend/node_modules/
+backend/.venv/
+frontend/dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.db-journal
+venv/
+.env
+
+# Electron
+dist-electron/
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

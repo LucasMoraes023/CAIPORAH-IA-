@@ -1,0 +1,21 @@
+{
+  "name": "gamecopilot-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && poetry run uvicorn src.app:app --reload --host 127.0.0.1 --port 8000",
+    "frontend:dev": "cd frontend && vite",
+    "electron:dev": "cd frontend && electron .",
+    "start": "npm run dev",
+    "package:windows": "cd frontend && npm run electron:build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^27.4.0",
+    "electron-builder": "^23.6.0",
+    "wait-on": "^8.1.0",
+    "typescript": "^5.6.2"
+  }
+}

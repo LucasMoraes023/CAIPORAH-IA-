@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "gamecopilot-ai-backend"
+version = "0.1.0"
+description = "Backend Python para GameCopilot AI"
+authors = ["GameCopilot AI"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.2"
+uvicorn = "^0.24.0"
+opencv-python = "^4.9.0"	onnxruntime = "^1.16.0"
+pydantic = "^2.7.0"
+sqlalchemy = "^2.0.40"
+python-multipart = "^0.0.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"

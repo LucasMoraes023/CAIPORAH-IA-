@@ -1,0 +1,48 @@
+{
+  "name": "gamecopilot-ai-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GameCopilot AI desktop companion for real-time screen analysis, voice interaction, memory and plugins.",
+  "author": "GameCopilot AI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LucasMoraes023/CAIPORAH-IA-.git"
+  },
+  "main": "electron-main.js",
+  
+  "build": {
+    "appId": "com.gamecopilot.ai",
+    "productName": "GameCopilot AI",
+    "files": [
+      "dist/**/*",
+      "electron-main.js",
+      "preload.js"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": ["nsis"],
+      "icon": "assets/icon.ico"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "electron:build": "npm run build && electron-builder --win"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^24.6.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.4.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.1"
+  }
+}
