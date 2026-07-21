@@ -21,6 +21,7 @@
     "directories": {
       "buildResources": "assets"
     },
+    "publish": null,
     "win": {
       "target": ["nsis"],
       "icon": "assets/icon.ico"
